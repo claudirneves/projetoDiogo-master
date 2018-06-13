@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="99dp"
+        android:layout_height="106dp"
+        android:layout_above="@+id/tela_login_usuario"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_icone" />
+
+    <EditText
+        android:id="@+id/tela_login_usuario"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tela_login_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-202dp"
+        android:backgroundTint="#8d6b9f"
+        android:hint="Login"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tela_login_senha"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:backgroundTint="#8d6b9f"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:background="#6e7ea4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:onClick="botaoLogar"
+        android:text="Entrar"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:onClick="cadastre"
+        android:text="Não possui usuário? Cadastre."
+        android:textColor="#6e7ea4" />
+
+
+</RelativeLayout>
