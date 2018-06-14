@@ -18,14 +18,13 @@ public class CadastraSubtarefas {
     public CadastraSubtarefas(CadastraSubtarefasActivity activity){
         lista = activity;
         campoDescricao = activity.findViewById(R.id.cadastra_subtarefa_descricao);
-        campoStatus =  activity.findViewById(R.id.status_subtarefa);
+
     }
 
     public Subtarefas bancoTarefa(){
         Subtarefas subtarefas = new Subtarefas();
         subtarefas.setIdTarefa(lista.carregaIdTarefa());
         subtarefas.setDescricao(campoDescricao.getText().toString());
-      //  subtarefas.setStatus(campoStatus.isChecked());
         return subtarefas;
     }
 

@@ -37,12 +37,6 @@
                 android:layout_weight=".9"
                 android:hint="Descrição" />
 
-            <CheckBox
-                android:id="@+id/status_subtarefa"
-                android:layout_width="wrap_content"
-                android:layout_height="43dp"
-                android:layout_weight=".1"
-                android:text="Feito" />
 
 
         </LinearLayout>

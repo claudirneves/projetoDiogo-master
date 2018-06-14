@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.CheckedTextView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.josmar.tarefas.DAO.DAOSubtarefas;
 import com.example.josmar.tarefas.Modelo.Subtarefas;
@@ -30,6 +32,8 @@ public class ListaSubtarefasActivity extends AppCompatActivity {
         carregaLista();
 
     }
+
+
 
     private void carregaLista(){
         DAOSubtarefas daoSubtarefas = new DAOSubtarefas(this);

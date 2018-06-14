@@ -17,8 +17,7 @@ import com.example.josmar.tarefas.DAO.DAOSubtarefas;
 import com.example.josmar.tarefas.Modelo.Subtarefas;
 
 public class CadastraSubtarefasActivity extends AppCompatActivity {
-    CheckBox status;
-    int statusBanco;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,13 +48,11 @@ public class CadastraSubtarefasActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menu_Sub_ok:
                 EditText campoDesc = findViewById(R.id.cadastra_subtarefa_descricao);
-                status =  findViewById(R.id.status_subtarefa);
+
                 String validaDesc = campoDesc.getText().toString();
-                boolean validaStatus = status.isSelected();
+
                 if(TextUtils.isEmpty(validaDesc)){
                     campoDesc.setError("Descrição não poder ser vazia!");
-                }else if(validaStatus){
-                    status.setError("Não pode cadastrar uma subtarefa como feita!!");
                 }else{
                     Subtarefas subtarefas = cadastraSubtarefas.bancoTarefa();
                     DAOSubtarefas daoSubtarefas = new DAOSubtarefas(this);
